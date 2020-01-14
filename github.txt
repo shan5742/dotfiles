@@ -1,0 +1,11 @@
+[user]
+        name = AsamShanBD
+        email = asam.shan@bradbourne.digital
+[alias]
+        co = checkout
+        up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+        cob = checkout -b
+        s = status
+        ca = !git add -A && git commit -m
+        save = !git add -A && git commit -m 'SAVEPOINT'
+    wip = !git add -u && git commit -m "WIP"
