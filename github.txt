@@ -1,6 +1,6 @@
 [user]
-        name = AsamShanBD
-        email = asam.shan@bradbourne.digital
+	name = shan5742
+	email = asamshan456@gmail.com
 [alias]
         co = checkout
         up = !git pull --rebase --prune $@ && git submodule update --init --recursive
@@ -8,4 +8,32 @@
         s = status
         ca = !git add -A && git commit -m
         save = !git add -A && git commit -m 'SAVEPOINT'
-    wip = !git add -u && git commit -m "WIP"
+    	wip = !git add -u && git commit -m "WIP"
+        dev = !git checkout dev && git pull origin dev
+        staging = !git checkout staging && git pull origin staging
+        master = !git checkout master && git pull origin
+        po = push origin
+        pod = push origin dev
+        pos = push origin staging
+        pom = push origin master
+        plo = pull origin
+        plod = pull origin dev
+        plos = pull origin staging
+        plom = pull origin master
+        unstage = reset --soft HEAD^
+        ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+        ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+        la = "!git config -l | grep alias | cut -c 7-"
+        cp = cherry-pick
+        r = reset
+        r1 = reset HEAD^
+        r2 = reset HEAD^^
+        rh = reset --hard
+        rh1 = reset HEAD^ --hard
+        rh2 = reset HEAD^^ --hard
+        sl = stash list
+        sa = stash apply
+        ss = stash save
+
+
+
