@@ -35,5 +35,4 @@
         sa = stash apply
         ss = stash save
 
-
-
+pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset'
